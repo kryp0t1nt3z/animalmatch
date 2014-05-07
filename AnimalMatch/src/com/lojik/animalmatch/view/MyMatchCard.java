@@ -1,7 +1,7 @@
 package com.lojik.animalmatch.view;
 
 import com.lojik.animalmatch.R;
-
+/*
 public class MyMatchCard {
 	static int mNumberOfCards=12;
 	static int[] TOTAL_CARDS=new int[mNumberOfCards];
@@ -23,4 +23,22 @@ public class MyMatchCard {
 		return TOTAL_CARDS;
 	};
 	}
+*/
+public class MyMatchCard {
+	public static int mBaseGraphic;
+	public static int mFrontGraphic;
+	public static boolean mIsFlipped;
+	public static String mAnimalName;
+	public MyMatchCard(int frontGraphic, String animalName)
+	{
+		mFrontGraphic=frontGraphic;
+		mAnimalName=animalName;
+		mIsFlipped=false;
+		mBaseGraphic=R.drawable.whateverthebasegraphiciscalled;
+	}
 
+	public flip()
+	{
+		mIsFlipped=!mIsFlipped;
+	}
+}
